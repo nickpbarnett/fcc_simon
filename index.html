@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="simon">
+	<h1>Nicholas</h1>
+
+	<div id="red" class="paleRed"></div>
+	<div id="blue" class="paleBlue"></div>
+	<div id="yellow" class="paleYellow"></div>
+	<div id="green" class="paleGreen"></div>
+
+	<div id="progress">Steps in this series: <span id="steps"></span></div>
+	<button id="restart">Restart</button>
+
+	Strict mode:
+	<select id="strict" name="colour">
+		<option>On</option>
+		<option>Off</option>
+	</select>
+
+</div>
+
+<div id="instructions">
+	<ol>
+		<li> You will be presented with a random series of button presses to replicate, starting with one.</li>
+		<li>Each time you input a series of button presses correctly, you will see the same series of button presses but with an additional step.</li>
+		<li>When in strict mode, if you get a button press wrong, it notifies you that you have done so, and the game restarts at a new random series of button presses.</li>
+		<li><h3>To turn strict mode OFF and ON, use the selector once the game has started.</h3></li>
+		<li>When not in strict mode, if you press the wrong button, you will be notified that you have done so, and that series of button presses will start again to remind you of the pattern so you can try again.</li>
+		<li>You can see how many steps are in the current series of button presses.</li>
+		<li> If you want to restart, you can hit the reset button and the game will return to a single step.</li>
+		<li>You can win the game by getting a series of 20 steps correct. </li>
+	</ol>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
